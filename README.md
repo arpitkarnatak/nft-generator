@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# NFT Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple implementation of an NFT generator.
 
-## Available Scripts
+## How it works
 
-In the project directory, you can run:
+Drawing 10,000 unique images by hand is going to be a tedious task. Instead, a better approach could be to just draw the features and then use different permutations of those features.
 
-### `npm start`
+Using this method, we need to only draw the features and creating an image from combining the features will be done by the application. The images should be drawn as such that they can overlap perfectly over each other. For example
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Face](https://github.com/arpitkarnatak/nft-generator/blob/master/src/paint/face/face1.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```An Image for Face```
 
-### `npm test`
+![Hats](https://github.com/arpitkarnatak/nft-generator/blob/master/src/paint/hats/hat2.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```An Image for Hats```
 
-### `npm run build`
+![Eyes](https://github.com/arpitkarnatak/nft-generator/blob/master/src/paint/eyes/eyes1.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```An Image for Eyes```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Shades](https://github.com/arpitkarnatak/nft-generator/blob/master/src/paint/shades/shades2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```An Image for Shades```
 
-### `npm run eject`
+And these images once overlapped generate the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Output](https://github.com/arpitkarnatak/nft-generator/blob/master/src/paint/final_img.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+There's also a logic for rarity added in shades. You can set the variable `shadesProbability` high if you want the trait to be common, or lower if you want it to be rarer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How to use
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Create Images, lots of images. Images for different traits. And make sure they would align perfectly on top of each other. 
+2. Create a logic for generating arts, so you don't get repeating images. Or you can use the inbuilt Random function by javascript too.
+3. Use probability for traits you want to be rare.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
