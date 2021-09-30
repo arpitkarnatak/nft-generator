@@ -1,0 +1,18 @@
+{
+  "faces": [
+    "./paint/face/face1.png",
+    "./paint/face/face1.png",
+    "./paint/face/face3.png"
+  ],
+  "eyes": [
+    "/paint/eyes/eyes1.png",
+    "/paint/eyes/eyes1.png",
+    "/paint/eyes/eyes1.png"
+  ],
+  "hats": ["/paint/hats/hat1.png", "/paint/hats/hat1.png"],
+  "shades": [
+    "./paint/shades/shades1.png",
+    "./paint/shades/shades1.png",
+    "./paint/shades/shades1.png"
+  ]
+}
